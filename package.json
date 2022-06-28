@@ -1,0 +1,34 @@
+{
+  "name": "bilingual-template",
+  "version": "1.0.0",
+  "description": "Bilingual template for npm package(include package.json, README.md, README_zh-CN.md).",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "watch": "rollup -c -w",
+    "build": "rollup -c && tsc --emitDeclarationOnly",
+    "test": "vitest run --coverage",
+    "test:watch": "vitest watch"
+  },
+  "keywords": [],
+  "author": "wjq990112<1163585385@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.3",
+    "c8": "^7.11.3",
+    "rollup": "^2.75.7",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4",
+    "vitest": "^0.16.0"
+  }
+}
