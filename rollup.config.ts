@@ -20,5 +20,9 @@ export default defineConfig({
       exports: 'auto',
     },
   ],
-  plugins: [commonjs(), nodeResolve(), typescript()],
+  plugins: [
+    commonjs(),
+    nodeResolve(),
+    typescript({ tsconfig: './tsconfig.json' }),
+  ],
 });

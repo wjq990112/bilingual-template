@@ -12,6 +12,7 @@
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "declaration": true,
+    "declarationDir": "types",
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
